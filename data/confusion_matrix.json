@@ -1,0 +1,22 @@
+{
+  "labels": [
+    "deceptive",
+    "truthful"
+  ],
+  "matrix": [
+    [
+      142,
+      18
+    ],
+    [
+      15,
+      145
+    ]
+  ],
+  "breakdown": {
+    "actual_deceptive_pred_deceptive": 142,
+    "actual_deceptive_pred_truthful": 18,
+    "actual_truthful_pred_deceptive": 15,
+    "actual_truthful_pred_truthful": 145
+  }
+}

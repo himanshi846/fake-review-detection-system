@@ -1,0 +1,213 @@
+{
+  "experiment_name": "Phase 2: Amazon Product Review Human-vs-AI Classification",
+  "task_nature": "Strictly human-written (OR) versus fine-tuned GPT-2 generated (CG) review classification",
+  "important_notice": "Do NOT describe as confirmed fake-review detection; labels represent machine-generated text vs human reviews.",
+  "dataset": "Amazon Reviews 40k (Salminen et al., 2022)",
+  "train_file": "amazon_product_train.csv",
+  "test_file": "amazon_product_test.csv",
+  "train_samples": 32345,
+  "test_samples": 8087,
+  "train_distribution": {
+    "CG": 16173,
+    "OR": 16172
+  },
+  "test_distribution": {
+    "OR": 4044,
+    "CG": 4043
+  },
+  "vectorizer": {
+    "type": "TfidfVectorizer",
+    "lowercase": true,
+    "strip_accents": "unicode",
+    "ngram_range": [
+      1,
+      2
+    ],
+    "min_df": 2,
+    "sublinear_tf": true,
+    "vocabulary_size": 139582
+  },
+  "classifier": {
+    "type": "LogisticRegression",
+    "C": 1.0,
+    "max_iter": 1000,
+    "random_state": 42,
+    "solver": "lbfgs"
+  },
+  "training_timestamp": "2026-10-30T12:59:33.084258",
+  "fit_duration_seconds": 8.4967,
+  "overall_metrics": {
+    "accuracy": 0.9336,
+    "balanced_accuracy": 0.9336,
+    "macro_precision": 0.9341,
+    "macro_recall": 0.9336,
+    "macro_f1": 0.9336,
+    "weighted_f1": 0.9336,
+    "confusion_matrix": {
+      "labels": [
+        "OR",
+        "CG"
+      ],
+      "TN_actual_OR_pred_OR": 3842,
+      "FP_actual_OR_pred_CG": 202,
+      "FN_actual_CG_pred_OR": 335,
+      "TP_actual_CG_pred_CG": 3708
+    },
+    "per_class": {
+      "OR": {
+        "precision": 0.9198,
+        "recall": 0.95,
+        "f1": 0.9347,
+        "support": 4044
+      },
+      "CG": {
+        "precision": 0.9483,
+        "recall": 0.9171,
+        "f1": 0.9325,
+        "support": 4043
+      }
+    }
+  },
+  "category_metrics": [
+    {
+      "category": "Books_5",
+      "sample_count": 874,
+      "OR_count": 437,
+      "CG_count": 437,
+      "accuracy": 0.9199,
+      "macro_f1": 0.9199,
+      "OR_precision": 0.9051,
+      "OR_recall": 0.9382,
+      "OR_f1": 0.9213,
+      "CG_precision": 0.9359,
+      "CG_recall": 0.9016,
+      "CG_f1": 0.9184
+    },
+    {
+      "category": "Clothing_Shoes_and_Jewelry_5",
+      "sample_count": 770,
+      "OR_count": 385,
+      "CG_count": 385,
+      "accuracy": 0.9221,
+      "macro_f1": 0.9221,
+      "OR_precision": 0.9243,
+      "OR_recall": 0.9195,
+      "OR_f1": 0.9219,
+      "CG_precision": 0.9199,
+      "CG_recall": 0.9247,
+      "CG_f1": 0.9223
+    },
+    {
+      "category": "Electronics_5",
+      "sample_count": 798,
+      "OR_count": 399,
+      "CG_count": 399,
+      "accuracy": 0.9436,
+      "macro_f1": 0.9436,
+      "OR_precision": 0.9296,
+      "OR_recall": 0.9599,
+      "OR_f1": 0.9445,
+      "CG_precision": 0.9585,
+      "CG_recall": 0.9273,
+      "CG_f1": 0.9427
+    },
+    {
+      "category": "Home_and_Kitchen_5",
+      "sample_count": 810,
+      "OR_count": 405,
+      "CG_count": 405,
+      "accuracy": 0.942,
+      "macro_f1": 0.9419,
+      "OR_precision": 0.9202,
+      "OR_recall": 0.9679,
+      "OR_f1": 0.9434,
+      "CG_precision": 0.9661,
+      "CG_recall": 0.916,
+      "CG_f1": 0.9404
+    },
+    {
+      "category": "Kindle_Store_5",
+      "sample_count": 946,
+      "OR_count": 473,
+      "CG_count": 473,
+      "accuracy": 0.9461,
+      "macro_f1": 0.9461,
+      "OR_precision": 0.9451,
+      "OR_recall": 0.9471,
+      "OR_f1": 0.9461,
+      "CG_precision": 0.947,
+      "CG_recall": 0.945,
+      "CG_f1": 0.946
+    },
+    {
+      "category": "Movies_and_TV_5",
+      "sample_count": 716,
+      "OR_count": 358,
+      "CG_count": 358,
+      "accuracy": 0.8953,
+      "macro_f1": 0.8951,
+      "OR_precision": 0.8695,
+      "OR_recall": 0.9302,
+      "OR_f1": 0.8988,
+      "CG_precision": 0.9249,
+      "CG_recall": 0.8603,
+      "CG_f1": 0.8915
+    },
+    {
+      "category": "Pet_Supplies_5",
+      "sample_count": 852,
+      "OR_count": 426,
+      "CG_count": 426,
+      "accuracy": 0.9413,
+      "macro_f1": 0.9413,
+      "OR_precision": 0.9292,
+      "OR_recall": 0.9554,
+      "OR_f1": 0.9421,
+      "CG_precision": 0.9541,
+      "CG_recall": 0.9272,
+      "CG_f1": 0.9405
+    },
+    {
+      "category": "Sports_and_Outdoors_5",
+      "sample_count": 790,
+      "OR_count": 395,
+      "CG_count": 395,
+      "accuracy": 0.9544,
+      "macro_f1": 0.9544,
+      "OR_precision": 0.9454,
+      "OR_recall": 0.9646,
+      "OR_f1": 0.9549,
+      "CG_precision": 0.9638,
+      "CG_recall": 0.9443,
+      "CG_f1": 0.954
+    },
+    {
+      "category": "Tools_and_Home_Improvement_5",
+      "sample_count": 772,
+      "OR_count": 386,
+      "CG_count": 386,
+      "accuracy": 0.9391,
+      "macro_f1": 0.9391,
+      "OR_precision": 0.9165,
+      "OR_recall": 0.9663,
+      "OR_f1": 0.9407,
+      "CG_precision": 0.9644,
+      "CG_recall": 0.9119,
+      "CG_f1": 0.9374
+    },
+    {
+      "category": "Toys_and_Games_5",
+      "sample_count": 759,
+      "OR_count": 380,
+      "CG_count": 379,
+      "accuracy": 0.9262,
+      "macro_f1": 0.9262,
+      "OR_precision": 0.907,
+      "OR_recall": 0.95,
+      "OR_f1": 0.928,
+      "CG_precision": 0.9474,
+      "CG_recall": 0.9024,
+      "CG_f1": 0.9243
+    }
+  ]
+}

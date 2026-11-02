@@ -1,0 +1,68 @@
+{
+  "model_name": "TF-IDF + Logistic Regression",
+  "dataset": "Ott Deceptive Opinion Spam Corpus (Chicago Hotel Dataset)",
+  "vectorizer_config": {
+    "ngram_range": [
+      1,
+      2
+    ],
+    "min_df": 2,
+    "sublinear_tf": true,
+    "strip_accents": "unicode",
+    "vocabulary_size": 23047
+  },
+  "classifier_config": {
+    "model": "LogisticRegression",
+    "C": 1.0,
+    "max_iter": 1000,
+    "random_state": 42
+  },
+  "data_partitions": {
+    "train_rows": 1280,
+    "test_rows": 320,
+    "overlap_count": 0
+  },
+  "overall_metrics": {
+    "accuracy": 0.8969,
+    "balanced_accuracy": 0.8969,
+    "macro_precision": 0.897,
+    "macro_recall": 0.8969,
+    "macro_f1": 0.8969
+  },
+  "class_wise_metrics": {
+    "deceptive": {
+      "precision": 0.9045,
+      "recall": 0.8875,
+      "f1-score": 0.8959,
+      "support": 160
+    },
+    "truthful": {
+      "precision": 0.8896,
+      "recall": 0.9062,
+      "f1-score": 0.8978,
+      "support": 160
+    }
+  },
+  "confusion_matrix": {
+    "labels": [
+      "deceptive",
+      "truthful"
+    ],
+    "matrix": [
+      [
+        142,
+        18
+      ],
+      [
+        15,
+        145
+      ]
+    ],
+    "breakdown": {
+      "actual_deceptive_pred_deceptive": 142,
+      "actual_deceptive_pred_truthful": 18,
+      "actual_truthful_pred_deceptive": 15,
+      "actual_truthful_pred_truthful": 145
+    }
+  }
+}

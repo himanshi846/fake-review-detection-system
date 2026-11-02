@@ -1,0 +1,19 @@
+# Python
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# Secrets
+.env
+.streamlit/secrets.toml
+
+# Database
+reviews.db
+
+# Backup files
+*_backup_*.py
+*_backup_*.md
+
+# Temporary folders
+scratch/

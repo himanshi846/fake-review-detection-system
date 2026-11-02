@@ -1,0 +1,71 @@
+{
+  "experiment_name": "Phase 3: Yelp Restaurant Recommendation Filter Classification",
+  "task_nature": "Classification of Yelp automated recommendation filter decision (N = Recommended vs Y = Filtered)",
+  "important_notice": "Platform filtering decision does NOT establish confirmed fake or genuine reviews. Filtered reviews may include legitimate customer reviews flagged by anti-spam heuristics.",
+  "dataset": "YelpChi Restaurant Review Dataset (Rayana & Akoglu, KDD 2015)",
+  "train_file": "yelp_restaurant_train.csv",
+  "test_file": "yelp_restaurant_test.csv",
+  "train_samples": 21565,
+  "test_samples": 5390,
+  "train_distribution": {
+    "N": 16601,
+    "Y": 4964
+  },
+  "test_distribution": {
+    "N": 4150,
+    "Y": 1240
+  },
+  "vectorizer": {
+    "type": "TfidfVectorizer",
+    "lowercase": true,
+    "strip_accents": "unicode",
+    "ngram_range": [
+      1,
+      2
+    ],
+    "min_df": 2,
+    "sublinear_tf": true,
+    "vocabulary_size": 196654
+  },
+  "classifier": {
+    "type": "LogisticRegression",
+    "C": 1.0,
+    "max_iter": 1000,
+    "random_state": 42,
+    "solver": "lbfgs"
+  },
+  "training_timestamp": "2026-10-30T13:27:36.685184",
+  "fit_duration_seconds": 10.8257,
+  "overall_metrics": {
+    "accuracy": 0.7779,
+    "balanced_accuracy": 0.5388,
+    "macro_precision": 0.6972,
+    "macro_recall": 0.5388,
+    "macro_f1": 0.5189,
+    "weighted_f1": 0.7095,
+    "confusion_matrix": {
+      "labels": [
+        "N",
+        "Y"
+      ],
+      "TN_actual_N_pred_N": 4074,
+      "FP_actual_N_pred_Y": 76,
+      "FN_actual_Y_pred_N": 1121,
+      "TP_actual_Y_pred_Y": 119
+    },
+    "per_class": {
+      "N": {
+        "precision": 0.7842,
+        "recall": 0.9817,
+        "f1": 0.8719,
+        "support": 4150
+      },
+      "Y": {
+        "precision": 0.6103,
+        "recall": 0.096,
+        "f1": 0.1659,
+        "support": 1240
+      }
+    }
+  }
+}

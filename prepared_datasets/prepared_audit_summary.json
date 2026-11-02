@@ -1,0 +1,38 @@
+{
+  "Ott Hotel": {
+    "total_records": 1600,
+    "null_texts": 0,
+    "duplicate_texts": 4,
+    "label_counts": {
+      "truthful": 800,
+      "deceptive": 800
+    },
+    "simulated_train_size": 1280,
+    "simulated_test_size": 320,
+    "partition_overlap_count": 0
+  },
+  "Amazon Product": {
+    "total_records": 40432,
+    "null_texts": 0,
+    "duplicate_texts": 20,
+    "label_counts": {
+      "CG": 20216,
+      "OR": 20216
+    },
+    "simulated_train_size": 32345,
+    "simulated_test_size": 8087,
+    "partition_overlap_count": 0
+  },
+  "Yelp Restaurant": {
+    "total_records": 26955,
+    "null_texts": 0,
+    "duplicate_texts": 36,
+    "label_counts": {
+      "N": 20751,
+      "Y": 6204
+    },
+    "simulated_train_size": 21565,
+    "simulated_test_size": 5390,
+    "partition_overlap_count": 0
+  }
+}

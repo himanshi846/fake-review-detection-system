@@ -1,0 +1,62 @@
+{
+  "Ott Hotel": {
+    "train_file": "ott_hotel_train.csv",
+    "test_file": "ott_hotel_test.csv",
+    "total_rows": 1600,
+    "train_rows": 1280,
+    "test_rows": 320,
+    "overlap_count": 0,
+    "full_label_pct": {
+      "truthful": 50.0,
+      "deceptive": 50.0
+    },
+    "train_label_pct": {
+      "truthful": 50.0,
+      "deceptive": 50.0
+    },
+    "test_label_pct": {
+      "truthful": 50.0,
+      "deceptive": 50.0
+    }
+  },
+  "Amazon Product": {
+    "train_file": "amazon_product_train.csv",
+    "test_file": "amazon_product_test.csv",
+    "total_rows": 40432,
+    "train_rows": 32345,
+    "test_rows": 8087,
+    "overlap_count": 0,
+    "full_label_pct": {
+      "CG": 50.0,
+      "OR": 50.0
+    },
+    "train_label_pct": {
+      "CG": 50.0,
+      "OR": 50.0
+    },
+    "test_label_pct": {
+      "OR": 50.01,
+      "CG": 49.99
+    }
+  },
+  "Yelp Restaurant": {
+    "train_file": "yelp_restaurant_train.csv",
+    "test_file": "yelp_restaurant_test.csv",
+    "total_rows": 26955,
+    "train_rows": 21565,
+    "test_rows": 5390,
+    "overlap_count": 0,
+    "full_label_pct": {
+      "N": 76.98,
+      "Y": 23.02
+    },
+    "train_label_pct": {
+      "N": 76.98,
+      "Y": 23.02
+    },
+    "test_label_pct": {
+      "N": 76.99,
+      "Y": 23.01
+    }
+  }
+}

@@ -1,0 +1,48 @@
+review_text,label
+"The product arrived on time and matches the description.",Likely Genuine
+"I have used this for three weeks and it works as expected.",Likely Genuine
+"Good quality for the price. Delivery took two days.",Likely Genuine
+"The size was accurate and the material feels comfortable.",Likely Genuine
+"Battery lasts around six hours, which is enough for my use.",Likely Genuine
+"Works well so far. The instructions could be clearer.",Likely Genuine
+"Packaging was damaged but the product itself is fine.",Likely Genuine
+"I bought this for work and use it almost every day.",Likely Genuine
+"Customer support replied after one day and resolved my issue.",Likely Genuine
+"Average product. Nothing special, but it does the job.",Likely Genuine
+"The colour is slightly different from the picture.",Likely Genuine
+"After a month, it still works and has no major problems.",Likely Genuine
+"Comfortable fit, but I recommend checking the size chart.",Likely Genuine
+"Good value overall. Shipping was slower than expected.",Likely Genuine
+"The food was fresh and the staff were helpful.",Likely Genuine
+"Room was clean, but street noise was noticeable at night.",Likely Genuine
+"I used this app for a week and found the navigation simple.",Likely Genuine
+"Quality is acceptable, although one button feels loose.",Likely Genuine
+"BEST PRODUCT EVER!!! BUY NOW!!! FIVE STARS GUARANTEED!!!",Potentially Fake
+"AMAZING AMAZING AMAZING!!! Every person must buy this today!!!",Potentially Fake
+"Perfect in every possible way, no flaws at all, life changing!!!",Potentially Fake
+"Buy this now!!! Best seller!!! Unbelievable!!! Five stars!!!",Potentially Fake
+"100 percent perfect product and the greatest deal on earth!!!",Potentially Fake
+"Excellent excellent excellent!!! I love it so much!!!",Potentially Fake
+"Everyone should buy this immediately. It is absolutely perfect!!!",Potentially Fake
+"Five stars because this is the best thing ever made!!!",Potentially Fake
+"Totally perfect, perfect, perfect. No need to think, just buy!!!",Potentially Fake
+"Best hotel in the world!!! Every single thing was flawless!!!",Potentially Fake
+"Guaranteed best product. Do not look anywhere else. Buy today!!!",Potentially Fake
+"Fantastic product!!! Amazing seller!!! Amazing delivery!!! Amazing quality!!!",Potentially Fake
+"Wonderful wonderful wonderful!!! Ten stars if I could!!!",Potentially Fake
+"Do not trust any other brand, this is the only good one!!!",Potentially Fake
+"Unbelievable deal!!! Buy five right now!!! You will never regret it!!!",Potentially Fake
+"Very generic praise with no details and repeated promotional language.",Suspicious
+"Review mentions a discount in exchange for a positive rating.",Suspicious
+"Same short praise repeated across several listings.",Suspicious
+"Seller asked me to leave five stars before the item arrived.",Suspicious
+"Great product, great product, great product.",Suspicious
+"Review contains a referral code and asks readers to purchase immediately.",Suspicious
+"Unusually enthusiastic praise without describing any actual experience.",Suspicious
+"The reviewer says they never used the product but gives five stars.",Suspicious
+"Copied wording appears to promote a seller rather than describe the item.",Suspicious
+"Rating seems unrelated to the product and contains only promotional claims.",Suspicious
+"Short review says perfect in every way but gives no supporting details.",Suspicious
+"Review was posted as part of a promotion for a free item.",Suspicious
+"Several repeated phrases make this review look templated.",Suspicious
+"Claims guaranteed results without describing use or evidence.",Suspicious

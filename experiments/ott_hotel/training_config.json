@@ -1,0 +1,81 @@
+{
+  "model_name": "Ott Hotel Deception Model",
+  "domain": "hotel",
+  "dataset": "Ott Deceptive Opinion Spam Corpus (Chicago Hotel Dataset)",
+  "train_file": "ott_hotel_train.csv",
+  "test_file": "ott_hotel_test.csv",
+  "train_samples": 1280,
+  "test_samples": 320,
+  "train_distribution": {
+    "truthful": 640,
+    "deceptive": 640
+  },
+  "test_distribution": {
+    "truthful": 160,
+    "deceptive": 160
+  },
+  "vectorizer": {
+    "type": "TfidfVectorizer",
+    "lowercase": true,
+    "strip_accents": "unicode",
+    "ngram_range": [
+      1,
+      2
+    ],
+    "min_df": 2,
+    "sublinear_tf": true,
+    "vocabulary_size": 23047
+  },
+  "classifier": {
+    "type": "LogisticRegression",
+    "C": 1.0,
+    "max_iter": 1000,
+    "random_state": 42,
+    "solver": "lbfgs"
+  },
+  "random_state": 42,
+  "training_timestamp": "2026-10-30T12:38:37.664250",
+  "fit_duration_seconds": 1.1565,
+  "metrics": {
+    "accuracy": 0.8969,
+    "balanced_accuracy": 0.8969,
+    "macro_precision": 0.897,
+    "macro_recall": 0.8969,
+    "macro_f1": 0.8969,
+    "weighted_f1": 0.8969,
+    "confusion_matrix": {
+      "labels": [
+        "truthful",
+        "deceptive"
+      ],
+      "matrix": [
+        [
+          145,
+          15
+        ],
+        [
+          18,
+          142
+        ]
+      ],
+      "TN": 145,
+      "FP": 15,
+      "FN": 18,
+      "TP": 142
+    },
+    "per_class": {
+      "truthful": {
+        "precision": 0.8896,
+        "recall": 0.9062,
+        "f1": 0.8978,
+        "support": 160.0
+      },
+      "deceptive": {
+        "precision": 0.9045,
+        "recall": 0.8875,
+        "f1": 0.8959,
+        "support": 160.0
+      }
+    }
+  }
+}
